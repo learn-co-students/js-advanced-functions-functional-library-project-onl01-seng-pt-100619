@@ -67,11 +67,13 @@ describe('index.js', function () {
     it('returns the correct reduced value when passed an initial value', function () {
       const reduceWithAcc = fi.reduce(testArr, callback, 10)
       expect(reduceWithAcc).to.equal(40)
+      //const testArr = [1, 2, 3, 4]
     })
 
     it('returns the correct reduced value when not passed an initial value', function () {
       const reduceSansAcc = fi.reduce(testArr, callback)
       expect(reduceSansAcc).to.equal(28)
+      //const testArr = [1, 2, 3, 4]
     })
 
     it('does not modify the original array', function () {
