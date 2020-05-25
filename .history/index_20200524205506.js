@@ -13,7 +13,7 @@ const fi = (function() {
 
     },
 
-    map: function(coll, iteration) {
+    map: function() {
       if (!(coll instanceof Array))
       coll = Object.values(coll)
       const newColl = []
@@ -47,7 +47,5 @@ const fi = (function() {
 
   }
 })()
-
-
 
 fi.libraryMethod()
